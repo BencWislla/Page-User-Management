@@ -1,6 +1,4 @@
-import { ListOfCards } from "../../components/ListOfCards";
-
 function Home() {
-  return <ListOfCards />;
+  return <div>Home</div>;
 }
 export default Home;
