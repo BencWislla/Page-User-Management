@@ -1,7 +1,11 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { BsLayoutSplit } from "react-icons/bs";
 import { FaUsers } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
 import { GoGraph } from "react-icons/go";
+import { RxExit } from "react-icons/rx";
+import { IoMdNotifications } from "react-icons/io";
 import Logo from "../../assets/icons/logo.png";
 import ImgAdmin from "../../assets/images/imgPerfil.jpg";
 import {
@@ -23,10 +27,6 @@ import {
   TextMenu,
   TitleHeader,
 } from "./styles";
-import { useState } from "react";
-import { RxExit } from "react-icons/rx";
-import { IoMdNotifications } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
 
 const linkPages = [
   {
