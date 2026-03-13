@@ -1,4 +1,10 @@
+import { Badge } from "../../components/ui/Badge";
+
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Badge text={"Inativo"} />
+    </div>
+  );
 }
 export default Home;
