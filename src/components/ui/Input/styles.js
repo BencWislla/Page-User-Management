@@ -11,7 +11,7 @@ background-color: ${(backgroudColor) => backgroudColor};
 export const InputContent = styled.input`
 border: none;
 outline: none;
-padding: 12px 16px;
+padding: 12px;
 font-size: 1rem;
 line-height: 24px;
 `
