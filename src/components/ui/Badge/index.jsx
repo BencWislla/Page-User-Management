@@ -1,9 +1,9 @@
-import { Container } from "./styles";
+import { Container, TextContent } from "./styles";
 
-export function Badge({ text, onClick, isActive }) {
+export function Badge({ text, isActive }) {
   return (
-    <Container onClick={onClick} isActive={isActive}>
-      {text}
+    <Container isActive={isActive}>
+      <TextContent>{text}</TextContent>
     </Container>
   );
 }
