@@ -1,4 +1,10 @@
+import { Button } from "../../components/ui/Button";
+
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Button text={"Salvar Usuario"} />
+    </div>
+  );
 }
 export default Home;
