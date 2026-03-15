@@ -1,4 +1,5 @@
-import { LabelContainer, SectionContainer } from "../Input/styles";
+import { IoIosArrowDown } from "react-icons/io";
+import { Container, LabelContainer, SelectContainer } from "./styles";
 
 export function Select({
   title,
@@ -6,6 +7,7 @@ export function Select({
   valueTwo,
   valueThree,
   valueFour,
+  valueFive,
   textOne,
   textTwo,
   textThree,
@@ -18,15 +20,15 @@ export function Select({
   return (
     <LabelContainer>
       {title}
-      <SectionContainer name={nameText} onChange={onChange} value={value}>
-        <option value="" disabled>
-          {textOne}
-        </option>
-        <option value={valueTwo}>{textTwo}</option>
-        <option value={valueThree}>{textThree}</option>
-        <option value={valueFour}>{textFour}</option>
-        <option value={valueFour}>{textFive}</option>
-      </SectionContainer>
+      <Container>
+        <SelectContainer name={nameText} onChange={onChange} value={value}>
+          <option value={valueOne}>{textOne}</option>
+          <option value={valueTwo}>{textTwo}</option>
+          <option value={valueThree}>{textThree}</option>
+          <option value={valueFour}>{textFour}</option>
+          <option value={valueFive}>{textFive}</option>
+        </SelectContainer>
+      </Container>
     </LabelContainer>
   );
 }
