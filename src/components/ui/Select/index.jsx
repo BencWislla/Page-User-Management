@@ -1,4 +1,3 @@
-import { IoIosArrowDown } from "react-icons/io";
 import { Container, LabelContainer, SelectContainer } from "./styles";
 
 export function Select({
