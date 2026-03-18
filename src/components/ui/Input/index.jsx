@@ -9,11 +9,12 @@ export function Input({
   alt,
   type,
   fontSize,
+  fillFormBorder,
 }) {
   return (
     <LabelContent>
       {text}
-      <ContainerInput>
+      <ContainerInput fillFormBorder={fillFormBorder}>
         {icon}
         <InputContent
           placeholder={placeholder}
