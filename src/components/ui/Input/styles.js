@@ -6,14 +6,14 @@ border-radius: 8px;
 display: flex;
 background-color: #ffff;
 align-items: center;
-padding: 12px 9px;
+padding: 8px 12px;
 gap: 12px;
 
 `;
 export const InputContent = styled.input`
 border: none;
 outline: none;
-font-size: ${(props) => props.fontSize};
+font-size:12px;
 line-height: 24px;
 background-color: transparent;
 width: 100%;

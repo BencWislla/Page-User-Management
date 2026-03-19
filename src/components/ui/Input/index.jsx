@@ -8,7 +8,7 @@ export function Input({
   onChange,
   alt,
   type,
-  fontSize,
+
   fillFormBorder,
 }) {
   return (
@@ -22,7 +22,6 @@ export function Input({
           alt={alt}
           onChange={onChange}
           type={type}
-          fontSize={fontSize}
         />
       </ContainerInput>
     </LabelContent>

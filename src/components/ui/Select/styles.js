@@ -6,6 +6,7 @@ width: 100%;
 background-color: transparent;
 border: none;
 cursor: pointer;
+font-size: 12px;
 `
 export const LabelContainer = styled.label`
 display: flex;
