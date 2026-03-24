@@ -7,6 +7,7 @@ background-color: transparent;
 border: none;
 cursor: pointer;
 font-size: 12px;
+color: ${({ color }) => color};
 `
 export const LabelContainer = styled.label`
 display: flex;

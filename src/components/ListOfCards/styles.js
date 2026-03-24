@@ -1,12 +1,19 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
+
+export const Content = styled.div`
+width: 100%;
 display: flex;
 flex-direction: row;
-gap: 24px;
 align-items: center;
-justify-content: center;
+gap: 24px;
+
+
 `
+export const Container = styled.div`
+ flex: 1;
+  margin: 0;
+`;
 
 export const Percentage = styled.p`
 color:${(props) => props.isPositive ? "#22C55E" : "#EF4444"};
@@ -19,4 +26,5 @@ display: flex;
 flex-direction: row;
 align-items: center;
 gap: .25rem;
+
 `

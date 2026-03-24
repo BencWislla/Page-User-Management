@@ -10,5 +10,6 @@ height: 24px;
 export const TextContent = styled.p`
 font-size: 10px;
 line-height: 15px;
+font-weight:500;
 color: ${({ isActive }) => isActive ? "#15803D" : "#374151"};
 `

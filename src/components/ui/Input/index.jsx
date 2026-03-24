@@ -8,13 +8,12 @@ export function Input({
   onChange,
   alt,
   type,
-
-  fillFormBorder,
+  error,
 }) {
   return (
     <LabelContent>
       {text}
-      <ContainerInput fillFormBorder={fillFormBorder}>
+      <ContainerInput error={error}>
         {icon}
         <InputContent
           placeholder={placeholder}
