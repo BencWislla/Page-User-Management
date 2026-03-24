@@ -41,7 +41,7 @@ td,th{
 }
 tbody {
   display: block;
-  max-height: 300px;
+  max-height: 200px;
   overflow-y: auto;
   width: 100%;
 

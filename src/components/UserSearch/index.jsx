@@ -6,6 +6,18 @@ import { Select } from "../ui/Select";
 import { IoSearch } from "react-icons/io5";
 import { Container, ContentAddUser } from "./styles";
 
+const optionStatus = [
+  { text: "Todos os status", value: "" },
+  { text: "Ativo", value: "Ativo" },
+  { text: "Inativo", value: "Inativo" },
+];
+const optionCargo = [
+  { text: "Todos os cargos", value: "" },
+  { text: "Gerente", value: "Gerente" },
+  { text: "Usuário", value: "Usuário" },
+  { text: "Programador", value: "Programador" },
+  { text: "Administrador", value: "Administrador" },
+];
 export function UserSearch({
   value,
   onChange,
@@ -28,21 +40,13 @@ export function UserSearch({
           />
           <Select
             color={"#374151"}
-            textOne={"Todos os status"}
-            textTwo={"Ativo"}
-            textThree={"Inativo"}
-            nameText={"Status"}
             value={valueStatus}
             onChange={(e) => onChangeStatus(e.target.value)}
+            arrayOption={optionStatus}
           />
           <Select
             color={"#374151"}
-            textOne={"Todos os cargos"}
-            textTwo={"Gerente"}
-            textThree={"Usuário"}
-            textFour={"Administrador"}
-            textFive={"Programador"}
-            nameText={"Cargos"}
+            arrayOption={optionCargo}
             value={valueCargo}
             onChange={(e) => onChangeCargo(e.target.value)}
           />

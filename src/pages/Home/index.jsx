@@ -5,12 +5,9 @@ import { Container } from "./styles";
 function Home() {
   return (
     <Container>
-      <div>
-        <ListOfCards />
-      </div>
-      <div>
-        <ListOfUsers />
-      </div>
+      <ListOfCards />
+
+      <ListOfUsers />
     </Container>
   );
 }

@@ -2,16 +2,7 @@ import { Container, LabelContainer, SelectContainer } from "./styles";
 
 export function Select({
   title,
-  valueOne,
-  valueTwo,
-  valueThree,
-  valueFour,
-  valueFive,
-  textOne,
-  textTwo,
-  textThree,
-  textFour,
-  textFive,
+  arrayOption,
   nameText,
   onChange,
   value,
@@ -27,11 +18,9 @@ export function Select({
           value={value}
           color={color}
         >
-          <option value={""}>{textOne}</option>
-          <option value={valueTwo}>{textTwo}</option>
-          <option value={valueThree}>{textThree}</option>
-          <option value={valueFour}>{textFour}</option>
-          <option value={valueFive}>{textFive}</option>
+          {arrayOption.map((option) => (
+            <option value={option.value}>{option.text}</option>
+          ))}
         </SelectContainer>
       </Container>
     </LabelContainer>
