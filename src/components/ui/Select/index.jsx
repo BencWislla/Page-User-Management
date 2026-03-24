@@ -15,13 +15,19 @@ export function Select({
   nameText,
   onChange,
   value,
+  color,
 }) {
   return (
     <LabelContainer>
       {title}
       <Container>
-        <SelectContainer name={nameText} onChange={onChange} value={value}>
-          <option value={valueOne}>{textOne}</option>
+        <SelectContainer
+          name={nameText}
+          onChange={onChange}
+          value={value}
+          color={color}
+        >
+          <option value={""}>{textOne}</option>
           <option value={valueTwo}>{textTwo}</option>
           <option value={valueThree}>{textThree}</option>
           <option value={valueFour}>{textFour}</option>

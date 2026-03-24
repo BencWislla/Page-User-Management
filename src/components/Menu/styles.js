@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  height: 100vh;
   width: 100%;
 `;
+
 export const ContainerTitle = styled.div`
   display: flex;
   flex-direction: row;
@@ -13,6 +13,7 @@ export const ContainerTitle = styled.div`
   gap: 8px;
   align-items: center;
   border-bottom: 1px solid #e5e7eb;
+
 
   h1 {
     font-size: 18px;
@@ -22,7 +23,6 @@ export const ContainerTitle = styled.div`
 `;
 
 export const MenuSection = styled.div`
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,8 +34,7 @@ export const ContainerMenu = styled.div`
   flex-direction: column;
   gap: 0.25rem;
   padding: 1rem 0.75rem;
-
-
+  justify-content: space-between;
 `;
 
 export const ContentMenu = styled.div`
@@ -67,11 +66,13 @@ export const ContainerAdmin = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+
 `;
 
 export const ContentAdmin = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: end;
   gap: 0.75rem;
 `;
 

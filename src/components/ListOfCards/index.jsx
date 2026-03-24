@@ -3,7 +3,7 @@ import UsuariosAtivos from "../../assets/icons/usuariosAtivos.png";
 import UsuariosInativos from "../../assets/icons/usuariosInativos.png";
 import NovosUsuarios from "../../assets/icons/novosUsuarios.png";
 import { Card } from "../ui/Card/index";
-import { Container, ContainerPercetage, Percentage } from "./styles";
+import { Container, ContainerPercetage, Content, Percentage } from "./styles";
 import { IoMdArrowRoundDown, IoMdArrowRoundUp } from "react-icons/io";
 // Realizar um calculo para saber a porcetagem de crescimento ou de queda de usuarios
 // Preciso criar uma condiconal para saber se creceu ou caiu, se cresceu uma estelizaçao se nao outra
@@ -50,9 +50,9 @@ export function ListOfCards() {
   }
 
   return (
-    <Container>
+    <Content>
       {Cards.map((list) => (
-        <div>
+        <Container>
           <Card
             img={list.icon}
             alt={list.title}
@@ -81,8 +81,8 @@ export function ListOfCards() {
               </ContainerPercetage>
             }
           />
-        </div>
+        </Container>
       ))}
-    </Container>
+    </Content>
   );
 }
