@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerInput = styled.div`
-border: ${({ fillFormBorder }) => (fillFormBorder ? "1px solid #D1D5DB" : "1px solid #DC2626")};
+border: ${({ error }) => (error ? "1px solid #DC2626" : "1px solid #D1D5DB")};
 border-radius: 8px;
 display: flex;
 background-color: #ffff;

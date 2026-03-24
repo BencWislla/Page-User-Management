@@ -11,7 +11,6 @@ display: flex;
 flex-direction: column;
 gap: 17px;
 
-
 `
 export const ContainetText = styled.div`
 display: flex;
@@ -33,8 +32,9 @@ line-height: 20px;
 export const ContentCountUser = styled.div`
 display:flex;
 flex-direction: row;
+align-items: center;
 gap: 6px;
-font-size: 12px;
+font-size: 10px;
 `
 export const TextMonth = styled.p`
 color: #6B7280;
