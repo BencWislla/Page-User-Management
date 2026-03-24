@@ -1,4 +1,10 @@
+import { RegisterUsers } from "../../components/RegisterUsers";
+
 function Register() {
-  return <div>Register</div>;
+  return (
+    <div>
+      <RegisterUsers />
+    </div>
+  );
 }
 export default Register;
