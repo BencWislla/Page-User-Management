@@ -40,7 +40,7 @@ const linkPages = [
 
 export function Menu(props) {
   const [ativo, setAtivo] = useState(null);
-  const { children, title, text } = props;
+  const { children, title } = props;
 
   const navigate = useNavigate();
 
