@@ -1,10 +1,10 @@
 import { RegisterUsers } from "../../components/RegisterUsers";
-
+import { Container } from "./styles";
 function Register() {
   return (
-    <div>
+    <Container>
       <RegisterUsers />
-    </div>
+    </Container>
   );
 }
 export default Register;

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContainerButton = styled.button`
-width:${({ width }) => width};
 color:${({ color }) => color};
 background-color: ${({ backgroundColor }) => backgroundColor};
 cursor: ${({ cursor }) => cursor};

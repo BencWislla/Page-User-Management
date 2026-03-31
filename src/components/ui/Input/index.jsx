@@ -8,6 +8,7 @@ export function Input({
   onChange,
   alt,
   type,
+  register,
   error,
 }) {
   return (
@@ -21,6 +22,7 @@ export function Input({
           alt={alt}
           onChange={onChange}
           type={type}
+          {...register}
         />
       </ContainerInput>
     </LabelContent>

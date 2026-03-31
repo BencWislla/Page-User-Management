@@ -1,9 +1,10 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Register from "./pages/Register";
 import { Menu } from "./components/Menu";
 import { createGlobalStyle } from "styled-components";
+
 
 const GlobalStyle = createGlobalStyle`
   body, * {
@@ -23,10 +24,13 @@ const GlobalStyle = createGlobalStyle`
 
   `;
 function App() {
+  const location = useLocation()
+
+
   return (
     <>
       <GlobalStyle />
-      <Menu>
+      <Menu title={location.pathname === "/Register" ? "Criar Usuário" : "Gestão de Usuário"}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Register" element={<Register />} />
