@@ -1,7 +1,7 @@
+import { useNavigate } from "react-router-dom";
+import { IoArrowBack } from "react-icons/io5";
 import { Container, ContainerNotFound, Content, Img, Text } from "./styles";
 import imgNotFound from "../../assets/images/notFound.jpg";
-import { IoArrowBack } from "react-icons/io5";
-import { useNavigate } from "react-router-dom";
 
 function NotFound() {
   const navigate = useNavigate();

@@ -1,5 +1,12 @@
 import { useState } from "react";
 import { UserSearch } from "../UserSearch";
+import { FaTrash } from "react-icons/fa";
+import { Badge } from "../ui/Badge";
+import user1 from "../../assets/images/user1.png";
+import user2 from "../../assets/images/user2.png";
+import user3 from "../../assets/images/user3.png";
+import user4 from "../../assets/images/user4.png";
+import user5 from "../../assets/images/user5.png";
 import {
   ContentUsers,
   TableContainer,
@@ -8,13 +15,6 @@ import {
   UserContainer,
   UserContent,
 } from "./styles";
-import { Badge } from "../ui/Badge";
-import { FaTrash } from "react-icons/fa";
-import user1 from "../../assets/images/user1.png";
-import user2 from "../../assets/images/user2.png";
-import user3 from "../../assets/images/user3.png";
-import user4 from "../../assets/images/user4.png";
-import user5 from "../../assets/images/user5.png";
 
 const users = [
   {
