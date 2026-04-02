@@ -7,6 +7,6 @@ padding: 32px;
 width: 100%;
 height: 100%;
 gap: 32px;
-
+position: relative;
 `
 

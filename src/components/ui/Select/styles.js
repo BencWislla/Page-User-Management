@@ -19,8 +19,8 @@ color: #374151;
 `
 export const Container = styled.div`
 border-radius: 8px;
-border: 1px solid #D1D5DB;
-padding: 8px 12px;
+border: ${({ error }) => (error ? "1px solid #DC2626" : "1px solid #D1D5DB")};
+padding: 12px 12px;
 background-color: #fff;
 cursor: pointer;
 `

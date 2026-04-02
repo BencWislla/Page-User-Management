@@ -111,18 +111,13 @@ export const ContainerHeader = styled.div`
 `;
 
 export const TitleHeader = styled.h1`
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   letter-spacing: -0.5px;
   color: #1f2937;
 `;
 
-export const TextHeader = styled.p`
-  font-size: 16px;
-  color: #4b5563;
-  line-height: 24px;
-  letter-spacing: -0.5px;
-`;
+
 
 export const NotificationsHeader = styled.div`
 display: flex;

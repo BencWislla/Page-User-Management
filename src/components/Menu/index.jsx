@@ -23,7 +23,6 @@ import {
   NameAdmin,
   NotificationsHeader,
   TextAdmin,
-  TextHeader,
   TextMenu,
   TitleHeader,
 } from "./styles";
@@ -41,7 +40,7 @@ const linkPages = [
 
 export function Menu(props) {
   const [ativo, setAtivo] = useState(null);
-  const { children, title, text } = props;
+  const { children, title } = props;
 
   const navigate = useNavigate();
 
@@ -93,7 +92,6 @@ export function Menu(props) {
         <ContainerHeader>
           <header>
             <TitleHeader>{title}</TitleHeader>
-            <TextHeader>{text} </TextHeader>
           </header>
           <NotificationsHeader>
             <IoMdNotifications width={30} height={40} color="#9CA3AF" />

@@ -4,22 +4,21 @@ export function Button({
   text,
   onClick,
   value,
-  disabled,
+
   icon,
   color,
   backgroundColor,
-  width,
   cursor,
+  type,
 }) {
   return (
     <ContainerButton
       onClick={onClick}
       value={value}
-      disabled={disabled}
       color={color}
       backgroundColor={backgroundColor}
-      width={width}
       cursor={cursor}
+      type={type}
     >
       {icon}
       {text}
