@@ -1,70 +1,178 @@
-# Getting Started with Create React App
+# 🧑‍💼 Gestão de Usuários (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação web desenvolvida em **React** para gerenciamento de usuários, permitindo criar, visualizar e remover usuários de forma dinâmica.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Funcionalidades
 
-### `npm start`
+- 📋 Listagem de usuários (Home)
+- ➕ Criação de novos usuários
+- 🗑️ Remoção de usuários
+- 🔍 Filtros por nome, cargo e status
+- ⚠️ Validação de formulários
+- 🎨 Interface moderna com Styled Components
+- 🧭 Navegação entre páginas com React Router
+- 🧑‍🎨 Avatar automático para usuários
+- 📊 Dashboard com cards de métricas (mockados)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🗂️ Estrutura de Páginas
 
-### `npm test`
+### 🏠 Home
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Exibe a lista de usuários cadastrados
+- Permite filtrar usuários
+- Permite deletar usuários
+- Exibe métricas através de cards
 
-### `npm run build`
+### 📝 Registro de Usuário
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Formulário para criação de novos usuários
+- Validação com **Zod** e **React Hook Form**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### ❌ Página Não Encontrada
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Exibida quando a rota não existe
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tecnologias Utilizadas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React 19
+- React Router DOM
+- React Hook Form
+- Zod (validação de formulários)
+- Styled Components
+- Ant Design (antd)
+- React Icons
+- React Initials Avatar
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Dependências
 
-## Learn More
+```json
+{
+  "@hookform/resolvers": "^5.2.2",
+  "@testing-library/dom": "^10.4.1",
+  "@testing-library/jest-dom": "^6.9.1",
+  "@testing-library/react": "^16.3.2",
+  "@testing-library/user-event": "^13.5.0",
+  "antd": "^6.3.4",
+  "react": "^19.2.4",
+  "react-dom": "^19.2.4",
+  "react-hook-form": "^7.71.2",
+  "react-icons": "^5.5.0",
+  "react-initials-avatar": "^1.1.2",
+  "react-router-dom": "^7.13.1",
+  "react-scripts": "5.0.1",
+  "styled-components": "^6.3.11",
+  "web-vitals": "^2.1.4",
+  "zod": "^4.3.6"
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔌 API
 
-### Code Splitting
+O projeto utiliza uma API local baseada em um projeto separado (baixado do GitHub), executado em paralelo no ambiente de desenvolvimento.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📁 Essa API simula um backend real e está conectada à aplicação React via requisições HTTP.
 
-### Analyzing the Bundle Size
+### 🔗 Integração
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- A API roda separadamente no Visual Studio Code
+- A aplicação React consome os dados via `fetch`
 
-### Making a Progressive Web App
+### Endereço base:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+http://localhost:3000/users
+```
 
-### Advanced Configuration
+### Métodos utilizados:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `GET /users` → Listar usuários
+- `POST /users` → Criar usuário
+- `DELETE /users/:id` → Remover usuário
 
-### Deployment
+💡 Essa abordagem simula um ambiente real onde frontend e backend são aplicações separadas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📊 Dashboard (Cards)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Os cards exibidos na aplicação utilizam **dados mockados (fixos)**.
+
+Isso foi feito porque a API atual não fornece métricas como:
+
+- Total de usuários por período
+- Comparação com mês anterior
+- Crescimento percentual
+
+💡 Os dados mockados simulam um cenário real de dashboard administrativo.
+
+---
+
+## ⚙️ Como Rodar o Projeto
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+### 2. Instale as dependências
+
+```bash
+npm install
+```
+
+### 3. Inicie o projeto
+
+```bash
+npm start
+```
+
+---
+
+## 🧑‍🎨 Avatar de Usuários
+
+- Usuários possuem avatar automático
+- Caso não exista imagem, é gerado um avatar com iniciais
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este projeto foi desenvolvido com o objetivo de praticar:
+
+- Manipulação de estado com React
+- Consumo de API
+- Formulários e validação
+- Organização de componentes
+- Estilização com Styled Components
+
+---
+
+## 📌 Melhorias Futuras
+
+- ✏️ Edição de usuários
+- 🔐 Autenticação
+- 📊 Integração real dos dados do dashboard
+- 🌐 Deploy da aplicação
+
+---
+
+## 👨‍💻 Autor
+
+Wislla Benicio 🚀
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.

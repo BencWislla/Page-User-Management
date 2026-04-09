@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { BsLayoutSplit } from "react-icons/bs";
 import { FaUsers } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
@@ -34,18 +34,16 @@ const linkPages = [
     page: "/",
   },
   { icon: <FaUsers size={20} />, titlePage: "Usuários", page: "/Register" },
-  { icon: <GoGraph size={20} />, titlePage: "Relatórios", page: "/" },
-  { icon: <FaGear size={20} />, titlePage: "Configurações", page: "/" },
+  { icon: <GoGraph size={20} />, titlePage: "Relatórios", page: "" },
+  { icon: <FaGear size={20} />, titlePage: "Configurações", page: "" },
 ];
 
 export function Menu(props) {
-  const [ativo, setAtivo] = useState(null);
   const { children, title } = props;
-
   const navigate = useNavigate();
+  const location = useLocation();
 
   function handleClick(item) {
-    setAtivo(item.titlePage);
     navigate(item.page);
   }
 
@@ -62,7 +60,7 @@ export function Menu(props) {
               <ContentMenu
                 key={option.titlePage}
                 onClick={() => handleClick(option)}
-                ativo={ativo === option.titlePage}
+                ativo={location.pathname === option.page}
               >
                 <div>{option.icon} </div>
                 <TextMenu>{option.titlePage}</TextMenu>

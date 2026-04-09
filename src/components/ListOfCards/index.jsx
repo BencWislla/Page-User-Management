@@ -5,12 +5,7 @@ import TotalUsuarios from "../../assets/icons/totalUsuarios.png";
 import UsuariosAtivos from "../../assets/icons/usuariosAtivos.png";
 import UsuariosInativos from "../../assets/icons/usuariosInativos.png";
 import NovosUsuarios from "../../assets/icons/novosUsuarios.png";
-// Realizar um calculo para saber a porcetagem de crescimento ou de queda de usuarios
-// Preciso criar uma condiconal para saber se creceu ou caiu, se cresceu uma estelizaçao se nao outra
-// o valor atual - o valor do mes passado
-// o resultado / pelo mes passado * 100 (para saber o tamanho real daquela mudança em relação ao que a gente já tinha)
-// Com o calculo realizado, encontrei numeros positivos e negativos, com isso ja sei que se for negativo os numeros, o icone e a % terao que ser em red e se for positvo em verde
-//
+
 const Cards = [
   {
     icon: TotalUsuarios,

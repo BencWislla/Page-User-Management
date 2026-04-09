@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Alert } from "antd";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Alert } from "antd";
 import FormSchema from "./schema";
 import { Button } from "../ui/Button";
 import { Input } from "../ui/Input";
@@ -50,7 +50,19 @@ export function RegisterUsers() {
     navigate("/");
   }
 
-  function onSubmit() {
+  async function onSubmit(data) {
+    const response = await fetch("http://localhost:3000/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    console.log(result);
+
     setError(false);
 
     navigate("/", {

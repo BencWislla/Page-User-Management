@@ -83,7 +83,7 @@ export const UserContainer = styled.div`
 display: flex;
 flex-direction: row;
 align-items: center;
-gap: 12px;
+gap: 14px;
 `
 
 export const UserContent = styled.div`
@@ -98,4 +98,12 @@ display: flex;
 flex-direction: column;
 gap: 24px;
 
+`
+
+export const IconeAvatar = styled.div`
+background-color: #507df9de;
+color: #161515;
+border-radius: 9999px;
+padding: 10px;
+box-shadow: 2px 2px 3px #59585827;
 `
